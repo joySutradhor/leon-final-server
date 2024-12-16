@@ -18,7 +18,7 @@ const createUser = catchAsync(async (req: Request, res: Response) => {
   sendResponse(res, {
     statusCode: httpStatus.HttpStatus.CREATED,
     success: true,
-    message: `${result?.email} created successfully!`,
+    message: `${result?.role} created done!`,
     data: result,
   });
 });
