@@ -11,7 +11,9 @@ const createStoreyItemZodSchema = z.object({
     images: z.array(z.string(), {
       required_error: 'field is required!',
     }),
-    musicUrl:z.string().optional()
+    musicUrl: z.array(z.string(), {
+      required_error: 'field is required!',
+    }),
   }),
 });
 

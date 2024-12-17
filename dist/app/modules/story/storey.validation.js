@@ -16,7 +16,9 @@ const createStoreyItemZodSchema = zod_1.default.object({
         images: zod_1.default.array(zod_1.default.string(), {
             required_error: 'field is required!',
         }),
-        musicUrl: zod_1.default.string().optional()
+        musicUrl: zod_1.default.array(zod_1.default.string(), {
+            required_error: 'field is required!',
+        }),
     }),
 });
 const updateStoreyItemZodSchema = zod_1.default.object({
