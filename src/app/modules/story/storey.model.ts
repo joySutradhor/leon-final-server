@@ -12,7 +12,7 @@ export const StoreySchema = new Schema<IStoreyItem, StoreyItemModel>(
       required: true,
     },
     musicUrl: {
-      type: String,
+      type: [String],
       required: false,
     },
 

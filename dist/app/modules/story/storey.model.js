@@ -12,7 +12,7 @@ exports.StoreySchema = new mongoose_1.Schema({
         required: true,
     },
     musicUrl: {
-        type: String,
+        type: [String],
         required: false,
     },
     images: [String],
