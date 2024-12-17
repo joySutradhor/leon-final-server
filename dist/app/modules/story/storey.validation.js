@@ -26,7 +26,7 @@ const updateStoreyItemZodSchema = zod_1.default.object({
         title: zod_1.default.string().optional(),
         des: zod_1.default.string().optional(),
         img: zod_1.default.string().optional(),
-        musicUrl: zod_1.default.string().optional(),
+        musicUrl: zod_1.default.array(zod_1.default.string()).optional(),
     }),
 });
 exports.StoreyItemValidation = {

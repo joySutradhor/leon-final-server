@@ -22,7 +22,7 @@ const updateStoreyItemZodSchema = z.object({
     title: z.string().optional(),
     des: z.string().optional(),
     img: z.string().optional(),
-    musicUrl: z.string().optional(),
+    musicUrl: z.array(z.string()).optional(),
   }),
 });
 
